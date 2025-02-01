@@ -40,12 +40,12 @@ export default function PodcastSummary() {
 						<p className='mb-[20px]'>
 							Per Axbom
 							<br />
-							Hello, I'm Per Axbom.
+							{"Hello, I'm Per Axbom."}
 						</p>
 						<p className='mb-[20px]'>
 							ames Royal-Lawson
 							<br />
-							And I'm James Royal-Lawson.
+							{"And I'm James Royal-Lawson."}
 						</p>
 						<p className='mb-[20px]'>
 							Per Axbom
