@@ -15,17 +15,17 @@ const Footer = () => {
 							</Link>
 						</li>
 						<li>
-							<Link href='/' className='text-[14px] text-[#555555] font-[600]'>
+							<Link href='/blog' className='text-[14px] text-[#555555] font-[600]'>
 								Blog
 							</Link>
 						</li>
 						<li>
-							<Link href='/' className='text-[14px] text-[#555555] font-[600]'>
+							<Link href='/contact' className='text-[14px] text-[#555555] font-[600]'>
 								Contact
 							</Link>
 						</li>
 						<li>
-							<Link href='/' className='text-[14px] text-[#555555] font-[600]'>
+							<Link href='/donate' className='text-[14px] text-[#555555] font-[600]'>
 								Donate
 							</Link>
 						</li>
@@ -51,7 +51,8 @@ const Footer = () => {
 				</div>
 				<div className='mt-[90px] text-center text-[#222222] font-medium max-[425px]:mt-[60px]'>
 					<p className='max-[425px]:text-[14px]'>
-						PodcastTheme by VitaThemes | Privacy policy{' '}
+						PodcastTheme by VitaThemes |{' '}
+						<Link href={'/privacy-policy'}>Privacy policy</Link>{' '}
 					</p>
 					<ul className='flex justify-center gap-[23px] mt-[23px]'>
 						<li>
