@@ -3,9 +3,9 @@ import Container from '../Container/Container'
 
 const tags = ['Apple', 'Keynote', 'Product']
 const socialLinks = [
-	{ icon: <FaFacebook />, url: '#' },
-	{ icon: <FaGithub />, url: '#' },
-	{ icon: <FaTwitter />, url: '#' },
+	{ icon: <FaFacebook />, url: 'https://www.facebook.com/' },
+	{ icon: <FaGithub />, url: 'https://www.github.com/' },
+	{ icon: <FaTwitter />, url: 'https://www.x.com/' },
 ]
 
 export default function TagsAndShare() {

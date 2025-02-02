@@ -18,7 +18,9 @@ const Header = () => {
 		<header className='py-[39px] border-b border-[#EAEAEE]'>
 			<div className='mx-auto px-4 max-w-[1140px]'>
 				<div className='flex justify-between items-center'>
-					<Image src={logo} alt='Cast Press' width={80} height={28} />
+					<Link href={'/'}>
+						<Image src={logo} alt='Cast Press' width={80} height={28} />
+					</Link>
 
 					{/* Desktop Navigation */}
 					<nav className='hidden md:block'>

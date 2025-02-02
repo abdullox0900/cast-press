@@ -56,17 +56,17 @@ const Footer = () => {
 					</p>
 					<ul className='flex justify-center gap-[23px] mt-[23px]'>
 						<li>
-							<a href='/' target='_blank'>
+							<a href='https://www.facebook.com/' target='_blank'>
 								<FaFacebookF />
 							</a>
 						</li>
 						<li>
-							<a href='/' target='_blank'>
+							<a href='https://www.github.com/' target='_blank'>
 								<FaGithub />
 							</a>
 						</li>
 						<li>
-							<a href='/' target='_blank'>
+							<a href='https://www.x.com/' target='_blank'>
 								<FaTwitter />
 							</a>
 						</li>

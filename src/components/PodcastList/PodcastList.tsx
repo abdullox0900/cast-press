@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { FaPlay } from 'react-icons/fa'
 import Container from '../Container/Container'
 
@@ -8,6 +9,7 @@ const podcasts = [
 		date: 'Jan 18, 2021',
 		category: 'Business',
 		isNew: true,
+		link: '/episode',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at arcu dui. Aenean placerat mauris nisl...',
 	},
@@ -17,6 +19,7 @@ const podcasts = [
 		date: 'Jan 18, 2021',
 		category: 'Business',
 		isNew: false,
+		link: '/episode/ne',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
 	},
@@ -26,6 +29,7 @@ const podcasts = [
 		date: 'Jan 18, 2021',
 		category: 'Business',
 		isNew: false,
+		link: '/episode/ww',
 		description:
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
 	},
@@ -35,7 +39,11 @@ export default function PodcastList() {
 	return (
 		<Container>
 			{podcasts.map(podcast => (
-				<div key={podcast.id} className='mb-6 pb-6'>
+				<Link
+					href={podcast.link}
+					key={podcast.id}
+					className='inline-block mb-6 pb-6'
+				>
 					<div className='flex items-center text-sm text-gray-500 mb-2'>
 						{podcast.isNew && (
 							<span className='bg-[#F5F5F7] text-[#7247CA] px-[10px] py-[4px] text-[10px] rounded mr-2'>
@@ -56,7 +64,7 @@ export default function PodcastList() {
 						</span>{' '}
 						<span className='text-[12px] font-semibold'>LISTEN NOW</span>
 					</button>
-				</div>
+				</Link>
 			))}
 			<div className='flex space-x-2 mt-6'>
 				{[1, 2, 3, '...'].map((page, index) => (

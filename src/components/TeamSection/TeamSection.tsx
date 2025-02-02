@@ -36,9 +36,15 @@ export default function TeamSection() {
 								</span>
 								<h3 className='text-lg font-semibold mt-1 mb-[39px]'>{member.name}</h3>
 								<div className='flex space-x-3 mt-3 text-gray-600'>
-									<FaLinkedin className='cursor-pointer hover:text-blue-700' />
-									<FaGithub className='cursor-pointer hover:text-black' />
-									<FaTwitter className='cursor-pointer hover:text-blue-500' />
+									<a href='https://www.linkedin.com/' target='_blank'>
+										<FaLinkedin className='cursor-pointer hover:text-blue-700' />
+									</a>
+									<a href='https://www.github.com/' target='_blank'>
+										<FaGithub className='cursor-pointer hover:text-black' />
+									</a>
+									<a href='https://www.x.com/' target='_blank'>
+										<FaTwitter className='cursor-pointer hover:text-blue-500' />
+									</a>
 								</div>
 							</div>
 						</div>

@@ -1,6 +1,7 @@
 import PostImg1 from '@/assets/img/post-img-1.jpg'
 import PostImg2 from '@/assets/img/post-img-2.jpg'
 import Image from 'next/image'
+import Link from 'next/link'
 import { IoIosArrowForward } from 'react-icons/io'
 import Container from '../Container/Container'
 
@@ -48,9 +49,14 @@ const LatestPosts: React.FC<Text> = ({ title }) => {
 					</div>
 				))}
 			</div>
-			<button className='flex items-center gap-[8px] mt-[48px] px-4 py-2 rounded text-[#7247CA] bg-[#F5F5F7] font-semibold hover:bg-purple-100'>
-				View Blog <IoIosArrowForward />
-			</button>
+			<div className='inline-block'>
+				<Link
+					href='/blog'
+					className='flex items-center gap-[8px] mt-[48px] px-4 py-2 rounded text-[#7247CA] bg-[#F5F5F7] font-semibold hover:bg-purple-100'
+				>
+					View Blog <IoIosArrowForward />
+				</Link>
+			</div>
 		</Container>
 	)
 }
